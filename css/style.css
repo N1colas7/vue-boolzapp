@@ -37,6 +37,7 @@
     height: 100%;
     width: 30%;
     background-color: rgb(234, 234, 234);
+    border-right: 1px solid rgb(187, 187, 187);
 }
 
 .contain-chat{
@@ -46,11 +47,90 @@
 }
 
 .user-profile{
-    height: 10%;
-    background-color: yellow;
+    height: 8%;
     display: flex;
     justify-content: space-between;
 }
 
 .image-user{
+    display: flex;
+    margin: 0;
+}
+
+.text-profile{
+    margin-top: 22px;
+    margin-left: 5px;
+}
+
+.img-first{
+    width: 75%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.button-user{
+    display: flex;
+    margin: 0;
+}
+
+.grey{
+    color: rgb(177, 177, 177);
+}
+
+.alert-thumb{
+    background-color: rgb(142, 218, 252);
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bell{
+    padding: 16px;
+    background-color: white;
+    border-radius: 50px;
+    color: rgb(142, 218, 252);
+    height: 53px;
+    margin-top: 20px;
+}
+
+.search-bar{
+    background-color: rgb(250, 250, 250);
+    width: 100%;
+    height: 8%;
+}
+
+.center-button{
+    padding: 5% 18%;
+}
+
+.contain-friends{
+    background-color:white;
+}
+
+.contact{
+    display: flex;
+}
+
+.contact-info{
+    width: 100%;
+}
+
+.contact-name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-friends{
+    height: 40px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.text-friends{
+    font-size: 10px;
+}
+
+.marg-0{
+    margin: 0;
 }

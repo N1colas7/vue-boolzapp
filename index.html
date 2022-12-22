@@ -14,12 +14,48 @@
             <div class="little-contain">
                 <!-- container sinistra-->
                 <div class="contain-thumb">
+                    <!--user profile-->
                     <div class="user-profile">
                         <div class="image-user">
-                            <img :src="'img/avatar' + user.avatar + '.jpg'" :alt="user.name">
-                            <span></span>
+                            <img :src="'img/avatar' + user.avatar + '.jpg'" :alt="user.name" class="img-first">
+                            <span class="text-profile">{{ user.name }}</span>
                         </div>
-
+                        <div class="button-user">
+                            <i class="fa-solid fa-circle-notch text-profile grey"></i>
+                            <i class="fa-solid fa-message text-profile grey"></i>
+                            <i class="fa-solid fa-bars text-profile grey"></i>
+                        </div>
+                    </div>
+                    <!--alert thumb -->
+                    <div class="alert-thumb">
+                        <i class="fa-regular fa-bell-slash bell"></i>
+                        <div class="text-profile">
+                            <span>Ricevi notifiche di nuovi messaggi</span>
+                            <p><a href="">Attiva notifiche desktop</a></p>
+                        </div>    
+                    </div>
+                    <!--Search bar-->
+                    <div class="search-bar">
+                        <div class="center-button">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <input type="text" placeholder="Cerca o inizia una nuova chat" name="search">
+                        </div>
+                    </div>
+                    <div class="contain-friends">
+                        <div v-for="(contact) in contacts" class="contact">
+                            <div class="contact-image">
+                                <img :src="'img/avatar' + contact.avatar + '.jpg'" :alt="contact.name" class="image-friends">
+                            </div>
+                            <div class="contact-info marg-0">
+                                <div class="contact-name">
+                                    <h3 class="marg-0">
+                                        <span>{{contact.name}}</span>
+                                    </h3>
+                                    <span class="grey text-friends marg-0">12:00</span>
+                                </div>
+                                <span class="grey text-friends">Ultimo messaggio inviato</span>
+                            </div>    
+                        </div>
                     </div>
                 </div>
                 <!--container destra-->

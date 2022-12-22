@@ -3,7 +3,7 @@ createApp ({
     data() {
         return {
             user : {
-                name: 'Nome Utente',
+                name: 'Sofia',
                 avatar: '_io'
             },
             //contacts[index].messages
@@ -173,4 +173,4 @@ createApp ({
 
         }
     },
-})
+}).mount('#app')
