@@ -1,5 +1,5 @@
 *{
-    padding: 0 auto;
+    padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -43,4 +43,14 @@
     height: 100%;
     width: 70%;
     background-color: rgb(234, 234, 234);
+}
+
+.user-profile{
+    height: 10%;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-user{
 }
